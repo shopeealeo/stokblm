@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Embedded Content</title>
   <style>
-    /* Pastikan iframe mengisi seluruh layar */
     body, html {
       margin: 0;
       padding: 0;
@@ -16,9 +15,16 @@
       position: fixed;
       top: 0;
       left: 0;
-      width: 100vw;  /* 100% dari lebar layar */
-      height: 100vh; /* 100% dari tinggi layar */
+      width: 100vw; /* Menggunakan unit viewport */
+      height: 100vh; /* Menggunakan unit viewport */
       border: none;
+    }
+
+    /* Media Query untuk ukuran layar lebih kecil */
+    @media (max-width: 768px) {
+      iframe {
+        height: 100%;
+      }
     }
   </style>
 </head>
