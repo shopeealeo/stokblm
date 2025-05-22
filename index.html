@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stok BLM</title>
+  <title>CV BLM</title>
   <style>
-    /* Mengatur body agar bisa menampilkan iframe dengan ukuran penuh */
+    /* Mengatur body dan html agar iframe memenuhi seluruh layar */
     body, html {
       margin: 0;
       padding: 0;
@@ -16,8 +16,8 @@
       position: fixed;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
+      width: 100vw; /* 100% dari lebar layar */
+      height: 100vh; /* 100% dari tinggi layar */
       border: none;
     }
   </style>
@@ -30,7 +30,7 @@
 
   <script>
     window.onload = function() {
-      // Hanya mencoba memasuki full-screen mode pada layar yang lebih besar
+      // Pastikan hanya mencoba full-screen pada perangkat dengan layar besar (misalnya tablet atau desktop)
       if (window.innerWidth > 768) {
         document.querySelector('iframe')
           .requestFullscreen()
