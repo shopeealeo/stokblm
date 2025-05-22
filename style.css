@@ -11,39 +11,65 @@ html, body {
   font-family: Arial, sans-serif;
   background: #f5f7fa;
   display: flex;
-  align-items: flex-start; /* Menempelkan konten ke atas */
+  align-items: center;
   justify-content: center;
   padding: 20px;
 }
 
-/* Container flex center & responsive */
-.iframe-container {
-  position: relative;
-  width: 90vw; /* Lebar 90% dari viewport */
-  max-width: 900px; /* Maksimal lebar 900px */
-  padding-top: 56.25%; /* Rasio 16:9 untuk tampilan yang seimbang */
+.container {
+  background: #fff;
+  padding: 20px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   border-radius: 12px;
-  background: #fff;
-  margin-top: 0; /* Menempel ke atas */
+  max-width: 900px;
+  width: 100%;
 }
 
-/* Iframe full size posisi absolut */
-.iframe-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.search-input {
   width: 100%;
-  height: 100%;
-  border: none;
-  border-radius: 12px;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f0f0f0;
 }
 
 /* Media Queries untuk layar kecil (Mobile) */
 @media (max-width: 600px) {
-  .iframe-container {
-    width: 100vw;
-    padding-top: 75%; /* Sesuaikan rasio untuk layar portrait */
-    margin-top: 0; /* Menempelkan iframe ke atas pada layar kecil */
+  h1 {
+    font-size: 1.2rem;
+  }
+  
+  .container {
+    padding: 15px;
+  }
+
+  table {
+    font-size: 0.9rem;
   }
 }
