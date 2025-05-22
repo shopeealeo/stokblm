@@ -1,64 +1,30 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>CV BLM</title>
-<style>
-  /* Reset margin & padding */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  html, body {
-    height: 100%;
-    width: 100%;
-    font-family: Arial, sans-serif;
-    background: #f5f7fa;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-  }
-
-  /* Container flex center & responsive */
-  .iframe-container {
-    position: relative;
-    width: 90vw; /* Lebar 90% viewport */
-    max-width: 900px; /* Maksimal lebar */
-    padding-top: 56.25%; /* Rasio 16:9 */
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    border-radius: 12px;
-    background: #fff;
-  }
-
-  /* Iframe full size posisi absolut */
-  .iframe-container iframe {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-    border-radius: 12px;
-  }
-
-  /* Media Queries untuk layar kecil */
-  @media (max-width: 600px) {
-    .iframe-container {
-      width: 100vw;
-      padding-top: 75%; /* Rasio agak lebih tinggi untuk tampilan portrait */
-    }
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV BLM</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="iframe-container">
-    <iframe 
-      src="https://script.google.com/macros/s/AKfycbxuLx-xxRUyabp_5PBM5llZ2PB_PP0vgT90yd390MrOhcfwsBb8AIY1CENlMCAb6nCQtQ/exec" 
-      allowfullscreen>
-    </iframe>
+  <div class="container">
+    <h1>CV BUANA LINGGA MANDIRI STOK BARANG</h1>
+    <input type="text" placeholder="Cari apa saja..." class="search-input">
+    <table>
+      <thead>
+        <tr>
+          <th>KODE</th>
+          <th>NAMA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>CJTB</td>
+          <td>CLOSET JONGKONG</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Last updated: 22/5/2025, 21.22.32</p>
   </div>
 </body>
 </html>
-
