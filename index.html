@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV BLM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Embedded Content</title>
   <style>
-    /* Mengatur body dan html agar iframe memenuhi seluruh layar */
+    /* Pastikan iframe mengisi seluruh layar */
     body, html {
       margin: 0;
       padding: 0;
@@ -16,7 +16,7 @@
       position: fixed;
       top: 0;
       left: 0;
-      width: 100vw; /* 100% dari lebar layar */
+      width: 100vw;  /* 100% dari lebar layar */
       height: 100vh; /* 100% dari tinggi layar */
       border: none;
     }
@@ -30,7 +30,6 @@
 
   <script>
     window.onload = function() {
-      // Pastikan hanya mencoba full-screen pada perangkat dengan layar besar (misalnya tablet atau desktop)
       if (window.innerWidth > 768) {
         document.querySelector('iframe')
           .requestFullscreen()
